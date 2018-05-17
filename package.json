@@ -13,7 +13,7 @@
   "dependencies": {
     "aria": "^0.2.1",
     "feathers-authentication-client": "^0.3.2",
-    "feathers-client": "^2.2.0",
+    "feathers-client": "^2.4.0",
     "feathers-localstorage": "^1.0.0",
     "feathers-rest": "^1.7.2",
     "history": "^4.7.2",

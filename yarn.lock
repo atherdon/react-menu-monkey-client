@@ -2445,9 +2445,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-feathers-authentication-client@^0.3.1, feathers-authentication-client@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/feathers-authentication-client/-/feathers-authentication-client-0.3.2.tgz#add0ed0f562c2462228c22d688e1261ef5f96e56"
+feathers-authentication-client@^0.3.1, feathers-authentication-client@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/feathers-authentication-client/-/feathers-authentication-client-0.3.3.tgz#d2183e4b08287dfd3ecb4a96eb081cf0b4e7c263"
   dependencies:
     debug "^2.2.0"
     feathers-errors "^2.4.0"

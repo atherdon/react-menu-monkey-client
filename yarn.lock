@@ -9,6 +9,23 @@
     core-js "^2.5.3"
     regenerator-runtime "^0.11.1"
 
+"@feathersjs/adapter-commons@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@feathersjs/adapter-commons/-/adapter-commons-2.0.0.tgz#59f174df0ba92087c43c79a28690d275c4064d86"
+  dependencies:
+    "@feathersjs/commons" "^4.0.0"
+    "@feathersjs/errors" "^3.3.6"
+
+"@feathersjs/commons@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.0.0.tgz#ae49bae4025c35aaeb9aacb6a0c27a3d1def5062"
+
+"@feathersjs/errors@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.6.tgz#c34cfcd0a8fc1519afb36030efb3f835a8088015"
+  dependencies:
+    debug "^4.0.0"
+
 "@types/express-serve-static-core@*":
   version "4.0.44"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.0.44.tgz#a1c3bd5d80e93c72fba91a03f5412c47f21d4ae7"
@@ -1699,6 +1716,12 @@ debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@^4.0.0, debug@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  dependencies:
+    ms "^2.1.1"
+
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -2482,21 +2505,21 @@ feathers-hooks@2.0.0:
     feathers-commons "^0.8.6"
     uberproto "^1.2.0"
 
-feathers-localstorage@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/feathers-localstorage/-/feathers-localstorage-1.0.0.tgz#a9fc95fab64b6879f8546a80fc0883f4d4d0161f"
+feathers-localstorage@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/feathers-localstorage/-/feathers-localstorage-4.0.0.tgz#3bca701821006690aedf2d80cde7c58bd86332cc"
   dependencies:
-    debug "^2.2.0"
-    feathers-memory "^1.0.0"
+    debug "^4.1.0"
+    feathers-memory "^3.0.0"
 
-feathers-memory@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/feathers-memory/-/feathers-memory-1.1.0.tgz#da7b23ebeec46fa81bcee4778191287581d5c2a6"
+feathers-memory@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/feathers-memory/-/feathers-memory-3.0.2.tgz#f6e8128ff8939d74930c2771ff0c4c20f04d6b88"
   dependencies:
-    feathers-commons "^0.8.0"
-    feathers-errors "^2.0.1"
-    feathers-query-filters "^2.0.0"
-    uberproto "^1.2.0"
+    "@feathersjs/adapter-commons" "^2.0.0"
+    "@feathersjs/commons" "^4.0.0"
+    "@feathersjs/errors" "^3.3.6"
+    sift "^7.0.1"
 
 feathers-primus@2.1.0:
   version "2.1.0"
@@ -2507,12 +2530,6 @@ feathers-primus@2.1.0:
     primus "^6.0.5"
     primus-emitter "^3.1.1"
     uberproto "^1.2.0"
-
-feathers-query-filters@^2.0.0:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/feathers-query-filters/-/feathers-query-filters-2.1.2.tgz#cdb18224db5e19cc0140d528108e0908d5eb0654"
-  dependencies:
-    feathers-commons "^0.8.0"
 
 feathers-rest@1.7.2, feathers-rest@^1.7.2:
   version "1.7.2"
@@ -3972,6 +3989,10 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+
 mute-stream@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
@@ -5364,6 +5385,10 @@ shelljs@^0.7.5:
 shellwords@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.0.tgz#66afd47b6a12932d9071cbfd98a52e785cd0ba14"
+
+sift@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/sift/-/sift-7.0.1.tgz#47d62c50b159d316f1372f8b53f9c10cd21a4b08"
 
 signal-exit@^3.0.0:
   version "3.0.2"
